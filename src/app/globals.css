@@ -1,11 +1,11 @@
 :root {
-  --nat-navbar-bg: rgb(3, 78, 3);
-  --nat-navbar-bg-rgb-color: rgb(1, 51, 1);
+  --nat-navbar-bg: #c4c4c4;
+  --nat-navbar-bg-rgb-color: #c4c4c4;
   --nat-navbar-text-highlight: khaki;
   --nat-navbar-highlight-text: var(--bs-gray-500);
   --nat-navbar-highlight-bg: lightblue;
-  --nat-navbar-bg-rgb: 0, 128, 0;
-  --nat-navbar-text-color: white;
+  --nat-navbar-bg-rgb: 255, 255, 255;
+  --nat-navbar-text-color: #000000;
 }
 
 html,
