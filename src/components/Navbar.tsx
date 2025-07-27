@@ -6,7 +6,6 @@ import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 
 const NavBar: React.FC = () => {
   const { data: session } = useSession();
-  const currentUser = session?.user?.email;
   const userWithRole = session?.user as { email: string; randomKey: string };
   const role = userWithRole?.randomKey;
   const pathName = usePathname();
