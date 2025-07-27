@@ -14,7 +14,7 @@ export default function ProfilePage() {
   const user = {
     name: session.user.name || 'Admin',
     email: session.user.email || 'admin@foo.com',
-    role: 'Admin',
+    role: 'ADMIN',
     major: 'Computer Science',
     year: 'Sophomore',
     interests: ['Tech', 'Music', 'Gaming'],
