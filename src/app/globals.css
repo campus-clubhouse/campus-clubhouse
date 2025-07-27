@@ -16,7 +16,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-
   background: fixed center url("/background1.jpg");
   background-size: cover;
 }
@@ -44,11 +43,6 @@ footer a {
   flex-direction: column;
 }
 
-/* Hero section example */
-.hero-section {
-  min-height: 100vh;
-}
-
 /* Navbar link behavior */
 .navbar-nav .nav-link {
   transition: background-color 0.2s ease-in-out;
@@ -61,23 +55,3 @@ footer a {
   background-color: rgba(0, 0, 0, 0.1);
   color: var(--nat-navbar-text-color) !important;
 }
-
-/* Active (clicked/current) link style */
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:focus,
-.navbar-nav .nav-link:active {
-  background-color: var(gray); /* lightblue */
-  color: var(--nat-navbar-highlight-text) !important;
-  outline: none;
-  box-shadow: none;
-}
-
-.hero-overlay {
-  background-color: rgba(255, 255, 255, 0); /* White translucent overlay */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
