@@ -28,7 +28,7 @@ export function ClubAdminDashboard() {
 
   return (
     <Container className="mt-4">
-      <h2>Club Admin Page</h2>
+      <h2>Edit Your Club</h2>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>Club Name</Form.Label>

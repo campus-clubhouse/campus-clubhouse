@@ -10,6 +10,8 @@ const SignIn = () => {
   const router = useRouter();
 
   useEffect(() => {
+    if (status === 'loading') return; // wait for session to load
+
     if (status === 'authenticated') {
       const role = (session?.user as any)?.randomKey;
       if (role === 'SUPER' || role === 'ADMIN') {
@@ -29,7 +31,7 @@ const SignIn = () => {
   }
 
   if (status === 'authenticated') {
-    // While redirect is happening, don't show sign-in form
+    // Redirect in progress, don't show form
     return null;
   }
 
