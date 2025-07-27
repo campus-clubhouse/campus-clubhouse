@@ -1,9 +1,8 @@
 :root {
   --nat-navbar-bg: #c4c4c4;
   --nat-navbar-bg-rgb-color: #c4c4c4;
-  --nat-navbar-text-highlight: khaki;
-  --nat-navbar-highlight-text: var(--bs-gray-500);
   --nat-navbar-highlight-bg: lightblue;
+  --nat-navbar-highlight-text: #000000; /* keep clicked text black */
   --nat-navbar-bg-rgb: 255, 255, 255;
   --nat-navbar-text-color: #000000;
 }
@@ -17,23 +16,68 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  /*background: fixed center url("/digits-photo2.jpg");
-  background-size: cover;*/
+
+  background: fixed center url("/background1.jpg");
+  background-size: cover;
 }
+
+/* Bootstrap navbar overrides */
 body .navbar {
-  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);              /* default nav text color */
+  --bs-navbar-hover-color: var(--nat-navbar-text-color);        /* no color change on hover */
+  --bs-navbar-active-color: var(--nat-navbar-text-color);       /* clicked text stays black */
   --bs-navbar-brand-color: var(--nat-navbar-text-color);
-  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
-  --bs-navbar-color: var(--nat-navbar-text-color);
-  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-text-color);
 }
-footer, footer a {
+
+/* Footer styles */
+footer,
+footer a {
   color: var(--nat-navbar-text-color);
 }
 
+/* Full height wrapper for sticky footer layouts */
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
+
+/* Hero section example */
+.hero-section {
+  min-height: 100vh;
+}
+
+/* Navbar link behavior */
+.navbar-nav .nav-link {
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  color: var(--nat-navbar-text-color) !important;
+}
+
+/* Hover effect: background only, not text */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--nat-navbar-text-color) !important;
+}
+
+/* Active (clicked/current) link style */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:active {
+  background-color: var(gray); /* lightblue */
+  color: var(--nat-navbar-highlight-text) !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.hero-overlay {
+  background-color: rgba(255, 255, 255, 0); /* White translucent overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
