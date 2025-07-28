@@ -4,7 +4,6 @@ import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-
 import Providers from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -19,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${inter.className} wrapper d-flex flex-column min-vh-100`}>
         <Providers>
-          <NavBar brand={<span className="fw-bold">Campus Clubhouse</span>} />
+          <NavBar />
           <main className="flex-grow-1">{children}</main>
           <Footer />
         </Providers>

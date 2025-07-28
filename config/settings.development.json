@@ -1,6 +1,5 @@
 {
   "defaultAccounts": [
-  { "email": "super@foo.com", "password": "changeme", "role": "SUPER" },
   { "email": "admin@foo.com", "password": "changeme", "role": "ADMIN" },
   { "email": "john@foo.com", "password": "changeme" }
   ],
