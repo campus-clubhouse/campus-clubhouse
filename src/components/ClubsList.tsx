@@ -23,6 +23,7 @@ const clubs: Club[] = [
   { id: 'Hui', name: 'Hawaii undergraduate initiative', description: 'Helping all undergraduates!' },
   { id: 'icspark', name: 'Icspark', description: 'Helping younger people start coding early' },
   { id: 'kpcc', name: 'K-Pop Cardio Crew', description: 'Staying active with K-Pop!' },
+  { id: 'ms', name: 'Manoa Scholars Club', description: 'For those who want to make a positive impact' },
 ];
 
 export default function ClubsList() {
