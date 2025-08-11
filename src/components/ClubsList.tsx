@@ -16,6 +16,7 @@ const clubs: Club[] = [
   // eslint-disable-next-line max-len
   { id: 'BEST', name: 'Business Executive Society of Tomorrow', description: 'General Business club striving for excellence' },
   { id: 'Climb', name: 'Climbing club', description: 'For those who love to climb!' },
+  { id: 'EnvironmentalJustice', name: 'Environmental Justice club', description: 'Students on taking action locally' },
 ];
 
 export default function ClubsList() {
