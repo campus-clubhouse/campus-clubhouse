@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 
-export default function BESTClient() {
+export default function ClimbingClient() {
   return (
     <main>
       {/* Hero */}
@@ -12,10 +12,10 @@ export default function BESTClient() {
         <Container>
           <Row className="align-items-center g-4">
             <Col md={3}>
-              {/* Save a logo at /public/best-logo.png or adjust this path */}
+              {/* Save a logo at /public/climbing-logo.png or change the src below */}
               <Image
-                src="/best-logo.png"
-                alt="Business Executive Society of Tomorrow (BEST) Logo"
+                src="/climbclub-logo.png"
+                alt="UH Mānoa Climbing Club Logo"
                 width={200}
                 height={200}
                 className="img-fluid rounded"
@@ -23,19 +23,23 @@ export default function BESTClient() {
             </Col>
             <Col md={9}>
               <div className="d-flex align-items-center gap-2 mb-2">
-                <h1 className="m-0">Business Executive Society of Tomorrow (BEST)</h1>
-                <Badge bg="success">Business</Badge>
-                <Badge bg="success">Leadership</Badge>
-                <Badge bg="success">Professional</Badge>
-                <Badge bg="success">Networking</Badge>
+                <h1 className="m-0">Climbing Club (UH Mānoa)</h1>
+                <Badge bg="success">Outdoors</Badge>
+                <Badge bg="success">Fitness</Badge>
+                <Badge bg="success">Community</Badge>
               </div>
               <p className="text-muted mb-3">
-                BEST empowers UH Mānoa students to develop leadership, professional, and networking
-                skills through workshops, speaker events, and hands-on projects with peers and industry.
+                A student community for bouldering, top rope, and outdoor climbing. We host gym meetups,
+                skills sessions, and trips when conditions and permits allow. Beginners welcome!
               </p>
               <div className="d-flex flex-wrap gap-2">
-                <Button as="a" href="https://www.bestuhm.org/home" target="_blank" rel="noreferrer">
-                  Visit Website
+                <Button
+                  as="a"
+                  href="https://www.instagram.com/climbuhm/?hl=en"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
                 </Button>
                 <Link href="/clubs">
                   <Button variant="outline-secondary">← Back to Clubs</Button>
@@ -55,10 +59,9 @@ export default function BESTClient() {
               <Card.Body>
                 <Card.Title>About</Card.Title>
                 <Card.Text>
-                  The Business Executive Society of Tomorrow (BEST) brings together students interested in
-                  business strategy, entrepreneurship, and careers across consulting, finance, marketing, and
-                  operations. Members gain experience through workshops, resume/LinkedIn reviews, case activities,
-                  and community service. All majors are welcome.
+                  The Climbing Club brings together UH Mānoa students who love moving on rock—indoors and out.
+                  We focus on safe technique, training, and building a supportive crew. Expect gym sessions,
+                  movement/footwork workshops, and occasional outdoor excursions (weather and access dependent).
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -69,19 +72,9 @@ export default function BESTClient() {
                 <Card.Title>Meetings & Events</Card.Title>
                 <ul className="mb-0">
                   <li>
-                    <strong>General Meetings:</strong>
+                    <strong>Gym Meetups:</strong>
                     {' '}
-                    Follow their events tab to keep up with any ongoing or upcoming events
-                    {' '}
-                    <a
-                      href="https://www.bestuhm.org/events"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-primary"
-                    >
-                      here
-                    </a>
-                    .
+                    Weekly bouldering/top rope sessions
                   </li>
                 </ul>
               </Card.Body>
@@ -92,12 +85,17 @@ export default function BESTClient() {
               <Card.Body>
                 <Card.Title>How to Join</Card.Title>
                 <ol className="mb-3">
-                  <li>Visit the website for the latest schedule and membership details.</li>
-                  <li>Attend a general meeting or workshop to get oriented.</li>
-                  <li>Introduce yourself—students from any major or experience level are welcome.</li>
+                  <li>Follow the Instagram for the next meetup and announcements.</li>
+                  <li>Show up to a session—no experience needed. Rental gear OK.</li>
+                  <li>Be kind, climb safe, and have fun!</li>
                 </ol>
                 <div className="d-flex flex-wrap gap-2">
-                  <Button as="a" href="https://www.bestuhm.org/home" target="_blank" rel="noreferrer">
+                  <Button
+                    as="a"
+                    href="https://www.instagram.com/climbuhm/?hl=en"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Get Updates
                   </Button>
                   <Link href="/clubs">
@@ -121,7 +119,7 @@ export default function BESTClient() {
                   </div>
                   <div>
                     <div className="text-muted">Category</div>
-                    <div>Business · Leadership · Professional</div>
+                    <div>Outdoors · Fitness · Community</div>
                   </div>
                   <div>
                     <div className="text-muted">Membership</div>
@@ -136,19 +134,19 @@ export default function BESTClient() {
               <Card.Body>
                 <Card.Title>Contact</Card.Title>
                 <p className="mb-3">
-                  Have questions or want to collaborate? Reach out to slee3079@hawaii.edu or drop by a meeting.
+                  Have questions or want to collaborate? Reach out or join a meetup.
                 </p>
                 <div className="d-flex flex-column gap-2">
                   <Button
                     as="a"
-                    href="https://www.bestuhm.org/home"
+                    href="https://www.instagram.com/climbuhm/?hl=en"
                     target="_blank"
                     rel="noreferrer"
                     variant="outline-primary"
                   >
-                    Website
+                    Instagram
                   </Button>
-                  {/* Add socials here later if you have them */}
+                  {/* Add Discord or email later if available */}
                 </div>
               </Card.Body>
             </Card>
@@ -156,22 +154,12 @@ export default function BESTClient() {
             {/* Officers (mock data) */}
             <Card>
               <Card.Body>
-                <Card.Title>Officers</Card.Title>
+                <Card.Title>Point of contact</Card.Title>
                 <ul className="mb-0">
                   <li>
-                    <strong>President:</strong>
+                    <strong>Who to contact:</strong>
                     {' '}
-                    NICKOLAS WINDISCH
-                  </li>
-                  <li>
-                    <strong>Vice President:</strong>
-                    {' '}
-                    LARA HO
-                  </li>
-                  <li>
-                    <strong>Treasurer:</strong>
-                    {' '}
-                    STEVEN LI
+                    Ariela Gaffke at arielae@hawaii.edu
                   </li>
                 </ul>
               </Card.Body>
