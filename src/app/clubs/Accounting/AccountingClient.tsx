@@ -14,7 +14,7 @@ export default function AccountingClient() {
             <Col md={3}>
               {/* Put accounting logo at /public/accounting-logo.png or swap this path */}
               <Image
-                src="/accounting-logo.png"
+                src="/Accounting-logo.png"
                 alt="UH Mānoa Accounting Club Logo"
                 width={200}
                 height={200}
@@ -77,22 +77,19 @@ export default function AccountingClient() {
                   <li>
                     <strong>General Meetings:</strong>
                     {' '}
-                    TBD (announced at the start of each term)
-                  </li>
-                  <li>
-                    <strong>Workshops:</strong>
+                    Please refer to the schedule put out on their site
                     {' '}
-                    Resume reviews, interview practice, Excel/analytics skill-building
-                  </li>
-                  <li>
-                    <strong>Professional Events:</strong>
-                    {' '}
-                    Employer info sessions, panels, and networking nights
+                    <a
+                      href="https://acuhmanoa.org/eventspagespring2024"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link-primary"
+                    >
+                      here
+                    </a>
+                    .
                   </li>
                 </ul>
-                <small className="text-muted">
-                  Exact dates/times posted on the website and socials each month.
-                </small>
               </Card.Body>
             </Card>
 
@@ -175,20 +172,24 @@ export default function AccountingClient() {
                   <li>
                     <strong>President:</strong>
                     {' '}
-                    TBD
+                    Kara Archer
+                  </li>
+                  <li>
+                    <strong>Email:</strong>
+                    {' '}
+                    karcher@hawaii.edu
                   </li>
                   <li>
                     <strong>Vice President:</strong>
                     {' '}
-                    TBD
+                    Nikki Nagatori
                   </li>
                   <li>
                     <strong>Treasurer:</strong>
                     {' '}
-                    TBD
+                    Liberty Lum
                   </li>
                 </ul>
-                <small className="text-muted">Update with real names once confirmed.</small>
               </Card.Body>
             </Card>
           </Col>
