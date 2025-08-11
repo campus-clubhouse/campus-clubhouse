@@ -19,6 +19,7 @@ const clubs: Club[] = [
   { id: 'Climb', name: 'Climbing club', description: 'For those who love to climb!' },
   { id: 'EnvironmentalJustice', name: 'Environmental Justice club', description: 'Students on taking action locally' },
   { id: 'GreyHats', name: 'Grey Hats at UHM', description: 'for ones eager about cybersecurity and practical hacking' },
+  { id: 'Powerlifting', name: 'Powerlifting club', description: 'Powerlifting club at UHM' },
 ];
 
 export default function ClubsList() {
