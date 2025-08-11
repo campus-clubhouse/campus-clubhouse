@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card, Form } from 'react-bootstrap';
 
 type Club = {
   id: string;
@@ -17,12 +18,30 @@ const clubs: Club[] = [
 ];
 
 export default function ClubsList() {
+  const [filter, setFilter] = useState('');
+
+  // Filter clubs based on name or description
+  const filteredClubs = clubs.filter(
+    (club) => club.name.toLowerCase().includes(filter.toLowerCase())
+    || club.description.toLowerCase().includes(filter.toLowerCase()),
+  );
   return (
     <Container className="py-5">
       <h1 className="mb-4 text-center">Campus Clubs</h1>
+
+      {/* Filter Input */}
+      <Form.Group className="mb-4" controlId="filter">
+        <Form.Control
+          type="text"
+          placeholder="Search clubs..."
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+        />
+      </Form.Group>
+
       <Row>
         {/* USE unique ID as key */}
-        {clubs.map((club) => (
+        {filteredClubs.map((club) => (
           <Col md={4} className="mb-4" key={club.id}>
             <Card className="h-100 position-relative">
               <Card.Body>
