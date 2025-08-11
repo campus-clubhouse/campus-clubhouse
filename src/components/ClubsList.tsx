@@ -16,6 +16,7 @@ const clubs: Club[] = [
   { id: 'AMA', name: 'American Marketing Association', description: 'UHM chapter associated with AMA organization' },
   // eslint-disable-next-line max-len
   { id: 'BEST', name: 'Business Executive Society of Tomorrow', description: 'General Business club striving for excellence' },
+  { id: 'Climb', name: 'Climbing club', description: 'For those who love to climb!' },
 ];
 
 export default function ClubsList() {
