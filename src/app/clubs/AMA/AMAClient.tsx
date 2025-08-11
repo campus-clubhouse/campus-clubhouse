@@ -4,12 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 
-export const metadata = {
-  title: '8Bit Club · Campus Clubhouse',
-  description: 'Mockup club page for 8Bit (UH Mānoa) in the Campus Clubhouse style.',
-};
-
-export default function EightBitClubPage() {
+export default function AMAClient() {
   return (
     <main>
       {/* Hero */}
@@ -17,9 +12,10 @@ export default function EightBitClubPage() {
         <Container>
           <Row className="align-items-center g-4">
             <Col md={3}>
+              {/* Save a logo at /public/ama-logo.png or change the src below */}
               <Image
-                src="/8bit-logo.png"
-                alt="8Bit UH Mānoa Logo"
+                src="/ama-logo.png"
+                alt="American Marketing Association UH Mānoa Logo"
                 width={200}
                 height={200}
                 className="img-fluid rounded"
@@ -27,22 +23,21 @@ export default function EightBitClubPage() {
             </Col>
             <Col md={9}>
               <div className="d-flex align-items-center gap-2 mb-2">
-                <h1 className="m-0">8Bit (UH Mānoa)</h1>
-                <Badge bg="success">Technology</Badge>
-                <Badge bg="success">Gaming</Badge>
-                <Badge bg="success">Community</Badge>
+                <h1 className="m-0">American Marketing Association (UH Mānoa)</h1>
+                <Badge bg="success">Business</Badge>
+                <Badge bg="success">Marketing</Badge>
+                <Badge bg="success">Professional</Badge>
+                <Badge bg="success">Networking</Badge>
               </div>
               <p className="text-muted mb-3">
-                A student community for game development, retro and modern gaming culture,
-                creative coding, and tech meetups at UH Mānoa.
+                A student organization for aspiring marketers and business leaders. AMA at UH Mānoa
+                hosts workshops, guest speakers, and networking events to build real-world skills in
+                branding, digital marketing, analytics, and more.
               </p>
               <div className="d-flex flex-wrap gap-2">
-                {/* External link as <a> */}
-                <Button as="a" href="https://8bithawaii.org/" target="_blank" rel="noreferrer">
+                <Button as="a" href="https://www.amauhm.com/" target="_blank" rel="noreferrer">
                   Visit Website
                 </Button>
-
-                {/* Internal link wrapped with <Link> */}
                 <Link href="/clubs">
                   <Button variant="outline-secondary">← Back to Clubs</Button>
                 </Link>
@@ -61,36 +56,44 @@ export default function EightBitClubPage() {
               <Card.Body>
                 <Card.Title>About</Card.Title>
                 <Card.Text>
-                  8Bit brings together UH Mānoa students who love building and playing games,
-                  experimenting with interactive media, and learning the tools of the trade—from
-                  engines and art pipelines to sound and publishing. We run beginner-friendly
-                  workshops, casual game nights, and occasional jams/collabs.
+                  The American Marketing Association (AMA) connects students with industry
+                  practitioners and career-building opportunities. Expect hands-on workshops,
+                  resume/LinkedIn reviews, case study projects, and leadership opportunities
+                  within committees and event teams. All majors welcome—if you’re curious about
+                  marketing, this is a great place to start.
                 </Card.Text>
               </Card.Body>
             </Card>
 
-            {/* Upcoming / Regular Meetings */}
+            {/* Meetings & Events */}
             <Card className="mb-4">
               <Card.Body>
                 <Card.Title>Meetings & Events</Card.Title>
                 <ul className="mb-0">
                   <li>
-                    <strong>Getting started:</strong>
+                    <strong>General Meetings:</strong>
                     {' '}
-                    To find out more information you can join their Discord server
-                    {' '}
-                    <a
-                      href="https://discord.gg/T7Eu75fpAf"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-primary"
-                    >
-                      here
-                    </a>
-                    .
+                    TBD (announced at the start of each term)
                   </li>
-
+                  <li>
+                    <strong>Workshops:</strong>
+                    {' '}
+                    Personal branding, digital marketing, analytics, resume & interview prep
+                  </li>
+                  <li>
+                    <strong>Professional Events:</strong>
+                    {' '}
+                    Speaker series, firm spotlights, and networking nights
+                  </li>
+                  <li>
+                    <strong>Projects & Case Comps:</strong>
+                    {' '}
+                    Team-based marketing challenges and portfolio-building work
+                  </li>
                 </ul>
+                <small className="text-muted">
+                  Exact dates/times posted on the website and socials each month.
+                </small>
               </Card.Body>
             </Card>
 
@@ -99,17 +102,14 @@ export default function EightBitClubPage() {
               <Card.Body>
                 <Card.Title>How to Join</Card.Title>
                 <ol className="mb-3">
-                  <li>Check the website for the next meeting and quick onboarding.</li>
-                  <li>Bring a laptop (optional) if you want to follow along during workshops.</li>
-                  <li>Say hi! All majors and experience levels are welcome.</li>
+                  <li>Visit the website for the latest schedule and membership info.</li>
+                  <li>Attend a general meeting or workshop to get oriented.</li>
+                  <li>Introduce yourself—students from any major or experience level are welcome.</li>
                 </ol>
                 <div className="d-flex flex-wrap gap-2">
-                  {/* External link as <a> */}
-                  <Button as="a" href="https://8bithawaii.org/" target="_blank" rel="noreferrer">
+                  <Button as="a" href="https://www.amauhm.com/" target="_blank" rel="noreferrer">
                     Get Updates
                   </Button>
-
-                  {/* Internal link wrapped with <Link> */}
                   <Link href="/clubs">
                     <Button variant="outline-secondary">Explore More Clubs</Button>
                   </Link>
@@ -131,7 +131,7 @@ export default function EightBitClubPage() {
                   </div>
                   <div>
                     <div className="text-muted">Category</div>
-                    <div>Tech · Gaming · Community</div>
+                    <div>Business · Marketing · Professional</div>
                   </div>
                   <div>
                     <div className="text-muted">Membership</div>
@@ -146,12 +146,19 @@ export default function EightBitClubPage() {
               <Card.Body>
                 <Card.Title>Contact</Card.Title>
                 <p className="mb-3">
-                  Have questions or want to collaborate? Please reach out!
+                  Have questions or want to collaborate? Reach out or drop by a meeting.
                 </p>
                 <div className="d-flex flex-column gap-2">
-                  <Button as="a" href="https://8bithawaii.org/" target="_blank" rel="noreferrer">
+                  <Button
+                    as="a"
+                    href="https://www.amauhm.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    variant="outline-primary"
+                  >
                     Website
                   </Button>
+                  {/* Add socials later if desired, e.g.: */}
                 </div>
               </Card.Body>
             </Card>
@@ -162,20 +169,22 @@ export default function EightBitClubPage() {
                 <Card.Title>Officers</Card.Title>
                 <ul className="mb-0">
                   <li>
-                    <strong>Leaders:</strong>
+                    <strong>President:</strong>
                     {' '}
-                    Leighton Miguel, Gabrielle Huliganga
+                    TBD
                   </li>
                   <li>
-                    <strong>Emails:</strong>
+                    <strong>Vice President:</strong>
                     {' '}
-                    lmig4@hawaii.edu
+                    TBD
                   </li>
                   <li>
+                    <strong>Treasurer:</strong>
                     {' '}
-                    gabbyhuli808@gmail.com
+                    TBD
                   </li>
                 </ul>
+                <small className="text-muted">Update with real names once confirmed.</small>
               </Card.Body>
             </Card>
           </Col>
