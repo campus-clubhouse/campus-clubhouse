@@ -55,3 +55,12 @@ footer a {
   background-color: rgba(0, 0, 0, 0.1);
   color: var(--nat-navbar-text-color) !important;
 }
+
+/* Underline the club title when hovering the card */
+.card:hover .club-link {
+  text-decoration: underline !important;
+  transition: text-decoration-color 0.15s ease-in-out;
+}
+
+/* Optional: pointer on the whole card (stretched-link already does this, but just in case) */
+.card:hover { cursor: pointer; }
