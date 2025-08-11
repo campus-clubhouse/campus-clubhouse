@@ -14,7 +14,8 @@ const clubs: Club[] = [
   { id: '8bit', name: '8bit Club', description: 'For those passionate about software development and solutions' },
   { id: 'Accounting', name: 'Accounting Club', description: 'Opportunity to invest in professional growth' },
   { id: 'AMA', name: 'American Marketing Association', description: 'UHM chapter associated with AMA organization' },
-  { id: 'striking', name: 'Kickboxing Club', description: 'Learn techniques and spar every Wednesday' },
+  // eslint-disable-next-line max-len
+  { id: 'BEST', name: 'Business Executive Society of Tomorrow', description: 'General Business club striving for excellence' },
 ];
 
 export default function ClubsList() {
